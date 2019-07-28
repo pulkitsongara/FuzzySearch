@@ -1,7 +1,7 @@
 # FuzzySearch
 Fuzzy searchh is an algorithm for approximate match implemented in python.
 
-##Deploying
+## Deploying
 
 ```
 git clone https://github.com/pulkitsongara/FuzzySearch.git
