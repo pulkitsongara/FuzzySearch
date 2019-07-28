@@ -6,7 +6,7 @@ from flask import Flask, request, render_template
 app = Flask(__name__, template_folder='./templates')
 @app.route("/search", methods=['GET'])
 def fuzzySearch():
-    search_word = request.args.get('word')
+    search_word = request.args.get('word') #read query string from here
     temp_df = pd.DataFrame()
     data_frame = pd.read_csv("word_search.tsv", sep='\t', names=["word", "count"]) #Read .tsv file through pandas function
     data_frame["word"] = data_frame["word"].apply(lambda x: str(x)) #Here I converted word list to string
