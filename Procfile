@@ -1,1 +1,1 @@
-web: gunicorn fuzzySearch.py
+web: gunicorn fuzzySearch.py:app
